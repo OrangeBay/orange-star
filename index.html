@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orange Star — Travel The World Through Better Software</title>
+  <meta name="description" content="Orange Star builds digital solutions for tourism businesses — booking systems, full-stack platforms, and multilingual tools for hotels, boats, and operators worldwide." />
+  <link rel="icon" type="image/x-icon" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo.ico-ZIJTl4sxRQmqlzHzG9o7iW9QV6LXS4.x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="progress-bar" role="progressbar" aria-label="Page scroll progress"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar" aria-label="Main navigation">
+    <a href="#home" class="nav-logo" aria-label="Orange Star — Home">
+      <img src="logo.jpg" alt="Orange Star logo" />
+      <span class="nav-logo-text">Orange Star</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#work">Our Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-modal="true">
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About Us</a>
+    <a href="#work" class="mobile-link">Our Work</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" aria-label="Hero">
+    <!-- Starfield -->
+    <div class="stars-layer" id="stars-layer" aria-hidden="true"></div>
+
+    <!-- Decorative rotating gold star -->
+    <svg class="hero-star-deco" viewBox="0 0 200 200" aria-hidden="true">
+      <polygon points="100,10 122,75 190,75 136,116 158,181 100,140 42,181 64,116 10,75 78,75"
+               fill="var(--gold)" />
+    </svg>
+
+    <div class="hero-content reveal">
+      <h1>We Build Digital Experiences<br /><span>for Tourism</span></h1>
+      <p>From booking systems to full-stack platforms — we turn your tourism vision into powerful software.</p>
+      <div class="hero-buttons">
+        <a href="#work" class="btn-primary">See Our Work</a>
+        <a href="#contact" class="btn-outline">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator" aria-hidden="true">
+      <svg class="scroll-arrow" viewBox="0 0 24 24">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="about-inner">
+      <div class="about-visual reveal">
+        <div class="globe-circle" role="img" aria-label="Illustrated globe with travel connections">
+          <svg viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="110" cy="110" r="88" stroke="#1A6FA8" stroke-width="2.5" fill="#e8f4fb"/>
+            <ellipse cx="110" cy="110" rx="88" ry="28" stroke="#1A6FA8" stroke-width="1.2" stroke-dasharray="4 4" fill="none"/>
+            <ellipse cx="110" cy="80" rx="70" ry="18" stroke="#1A6FA8" stroke-width="1" stroke-dasharray="3 5" fill="none"/>
+            <ellipse cx="110" cy="140" rx="70" ry="18" stroke="#1A6FA8" stroke-width="1" stroke-dasharray="3 5" fill="none"/>
+            <ellipse cx="110" cy="110" rx="30" ry="88" stroke="#1A6FA8" stroke-width="1.4" stroke-dasharray="4 4" fill="none"/>
+            <ellipse cx="110" cy="110" rx="115" ry="38" stroke="#F4A123" stroke-width="1.5" fill="none" opacity="0.5" transform="rotate(-20 110 110)"/>
+            <ellipse cx="110" cy="110" rx="115" ry="38" stroke="#F4A123" stroke-width="1.5" fill="none" opacity="0.3" transform="rotate(30 110 110)"/>
+            <circle cx="88" cy="92" r="5" fill="#F4A123"/>
+            <circle cx="136" cy="118" r="5" fill="#1A6FA8"/>
+            <circle cx="108" cy="135" r="4" fill="#F4A123"/>
+            <line x1="88" y1="92" x2="136" y2="118" stroke="#F4A123" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.7"/>
+            <line x1="136" y1="118" x2="108" y2="135" stroke="#1A6FA8" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.7"/>
+            <polygon points="110,96 114,108 126,108 117,116 120,128 110,120 100,128 103,116 94,108 106,108" fill="#F4A123" opacity="0.9"/>
+          </svg>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-overline reveal">Who We Are</p>
+        <h2 class="section-heading reveal reveal-delay-1" id="about-heading">Crafting Software for the World's Greatest Industry</h2>
+        <p class="reveal reveal-delay-2">We are a passionate software development team specializing in the tourism sector. We build scalable backends, intuitive frontends, booking systems, payment integrations, and multilingual platforms tailored for hotels, boat trips, marine experiences, and tourism operators across Egypt and beyond.</p>
+        <div class="stats-row">
+          <div class="stat-item reveal reveal-delay-2">
+            <div class="stat-number" data-target="5" data-suffix="+">0</div>
+            <div class="stat-label">Projects Delivered</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-3">
+            <div class="stat-number" data-target="3" data-suffix="+">0</div>
+            <div class="stat-label">Years of Experience</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-4">
+            <div class="stat-number" data-target="100" data-suffix="%">0</div>
+            <div class="stat-label">Tourism Focused</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section id="services" aria-labelledby="services-heading">
+    <div class="services-header">
+      <p class="section-overline reveal">What We Do</p>
+      <h2 class="section-heading reveal reveal-delay-1" id="services-heading">Our Services</h2>
+    </div>
+    <div class="services-grid">
+      <article class="service-card reveal">
+        <div class="service-icon" aria-hidden="true">🌐</div>
+        <h3>Custom Web Platforms</h3>
+        <p>Full-stack web applications built to scale with your tourism business.</p>
+      </article>
+      <article class="service-card reveal reveal-delay-1">
+        <div class="service-icon" aria-hidden="true">📅</div>
+        <h3>Booking &amp; Payment Systems</h3>
+        <p>Seamless reservation flows with payment gateway integration.</p>
+      </article>
+      <article class="service-card reveal reveal-delay-2">
+        <div class="service-icon" aria-hidden="true">🔗</div>
+        <h3>API Integrations</h3>
+        <p>Connect to Viator, OTAs, Paymob, Stripe, and more.</p>
+      </article>
+      <article class="service-card reveal reveal-delay-3">
+        <div class="service-icon" aria-hidden="true">📱</div>
+        <h3>Mobile-Ready Solutions</h3>
+        <p>Responsive designs that work beautifully on every device.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== WORK SECTION ===== -->
+  <section id="work" aria-labelledby="work-heading">
+    <div class="work-header">
+      <p class="section-overline reveal">Portfolio</p>
+      <h2 class="section-heading reveal reveal-delay-1" id="work-heading">Our Latest Work</h2>
+      <p class="section-subheading reveal reveal-delay-2">We develop for your <strong>tourism based business</strong></p>
+    </div>
+
+    <article class="project-card reveal" aria-label="Featured project: Orange Bay Hurghada">
+      <div class="project-card-top">
+        <svg class="wave-deco" viewBox="0 0 900 80" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0,40 C150,80 350,0 500,40 C650,80 750,10 900,40 L900,80 L0,80 Z" fill="#1A6FA8"/>
+        </svg>
+
+        <div class="project-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          Featured Project
+        </div>
+        <h3>Orange Bay Hurghada</h3>
+        <p>A complete digital platform for one of the Red Sea's premier boat trip operators. We engineered the full booking engine, tiered membership system, Paymob payment gateway, multi-language support, and admin dashboard — all built from scratch.</p>
+
+        <div class="membership-row" aria-label="Membership tiers">
+          <span class="membership-tag">WHALE</span>
+          <span class="membership-tag">SHARK</span>
+          <span class="membership-tag">MERMAID</span>
+          <span class="membership-tag">DOLPHIN</span>
+          <span class="membership-tag">MANTA-RAY</span>
+          <span class="membership-tag">EAGLE</span>
+          <span class="membership-tag">YACHT CLUB</span>
+        </div>
+
+        <div class="tech-tags" aria-label="Tech stack">
+          <span class="tech-tag">Django</span>
+          <span class="tech-tag">REST API</span>
+          <span class="tech-tag">Supabase</span>
+          <span class="tech-tag">Paymob</span>
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Cloudflare</span>
+        </div>
+      </div>
+      <div class="project-card-bottom">
+        <a href="https://orangebayhurghada.com" target="_blank" rel="noopener noreferrer" class="project-visit-btn">
+          Visit Project
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <span style="font-size:0.82rem;color:rgba(248,247,244,0.4);">Red Sea, Egypt</span>
+      </div>
+    </article>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="contact-inner">
+      <div class="contact-info">
+        <div class="contact-info-header">
+          <p class="section-overline reveal">Get In Touch</p>
+          <h2 class="section-heading reveal reveal-delay-1" id="contact-heading">Let's Build Something Great Together</h2>
+          <p class="reveal reveal-delay-2">Tell us about your project — whether it's a booking system, a full platform, or an API integration, we'd love to help.</p>
+        </div>
+        <div class="contact-cards reveal reveal-delay-2">
+          <div class="contact-card">
+            <div class="contact-card-icon" aria-hidden="true">📍</div>
+            <div class="contact-card-text">
+              <strong>Location</strong>
+              <span>Hurghada, Red Sea, Egypt</span>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon" aria-hidden="true">📧</div>
+            <div class="contact-card-text">
+              <strong>Email</strong>
+              <span>hello@orangestar.dev</span>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon" aria-hidden="true">📞</div>
+            <div class="contact-card-text">
+              <strong>Phone</strong>
+              <span><a href="tel:+971524571186" style="color: inherit;">+971-52-4571186</a></span>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon" aria-hidden="true">🌊</div>
+            <div class="contact-card-text">
+              <strong>Specialization</strong>
+              <span>Tourism Tech</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap reveal reveal-delay-2">
+        <form class="contact-form" id="contact-form" novalidate aria-label="Contact form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="name" placeholder="Your name" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email</label>
+              <input type="email" id="femail" name="email" placeholder="your@email.com" autocomplete="email" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fsubject">Subject</label>
+            <input type="text" id="fsubject" name="subject" placeholder="How can we help?" required />
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" name="message" placeholder="Tell us about your project..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message</button>
+        </form>
+        <div class="success-message" id="success-msg" role="alert" aria-live="polite">
+          <div class="success-check" aria-hidden="true">✓</div>
+          <h3>Message Sent!</h3>
+          <p>We'll be in touch soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer role="contentinfo">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo-row">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAACcCAYAAACQoXXqAABAvklEQVR4nO29eZRdx3Wf+1XVOXfsuRvobszzSIAgwAkS55kUTVGyRNmWJSvPsmPHcRLLUezlOXGLnSznZUUvjuXpWZat2ZJFUgMpUSTBGQQJYiLmeQa6gUbPfcdzTlW9P+rc2w0SlCiHIED1+dZqDLfPPXP9atfeu3YJa60lISFhUiIv9QkkJCRcOhIBSEiYxCQCkJAwiUkEICFhEpMIQELCJCYRgISESUwiAAkJk5hEABISJjGJACQkTGISAUhImMQkApCQMIlJBCAhYRKTCEBCwiQmEYCEhElMIgAJCZOYRAASEiYxiQAkJExiEgFISJjE/MwLgI1/Jv4rISHB4V3qE7joWBAX/LAmBj/zGpiQ8Jb8jAqAjTt7A4RYRPwjEXgILFjjhEEILiQRCQmTAWGt/Rmxiy1YCwgQom7sx59caGtgQv9vjfs7EYSEScR7TAAsFotAxi3YYjAIlGv39e0MVMcwlSF0eJaoWkREFbARQqYRXhah8qhcC+SmIlUOUPERnI4IjNMCEkFI+NnlvTcEsGDRGGtA+oBCArrSQzhygGDwAOHoSWTpFLI6hNQGp3EWrIjFQmAtKN+DdBM2PQPVvBivZR6yfS4qMwWLJMIirUGKiQKQ+AwSfnZ4b1kA1mJtRCQlAoXSAWH/dkpnXoH+7XjFPqTRWOVhpI+VElXvyWtIagMDYyIkVXQEUSTBpBDpLkTXKtIz15LqXIgUGQwgrI59BuoSXHhCwsXhPSQANg7kCWRYJTj9AtWTT2BHj4It48kUkgYiJQCNtBHCWowQb4j+jZv0VoDGQxiD0AahQ2wQEgaSiCZSHQtJLbmD3KwrsbIRYy2qPixISHjvcxkKwES3nTPbjTAIJAII+jZTOPht5OAOpPSQvoc0EmEs2AhrnZ/ACosVAmkVSIGRIFAI44EI3HDAKoQoYYzAaB9jPLS2eDrCRoKoaiDy0NPX0Lz6QdJdy9xpmRArfZwcJWKQ8N7lMhOA+FRs3KhEiDUBVuaxlX4KB7+MOfU8vgYpBaExKONh8BB+BrwM1kshhMQiMDpCREXQZURURdoIKQVCprBSOZvCCCwaGwFaYbXGGoEwEq0VGJClMYreVLJLb6f12vvRfitCG6S0yZAg4T3NZSYA4NqkcXaAEUgpCM7torznb0gNHUNICKSHzk7Fa56NallIqnUmqmE6It0G+PGOBGDAlKB0Dj1ykurQUYLBXUSlM/hhGV8oUCAjH6M12obYSIIRoCVGUxcDL4wwxVEqM6+i4bbfJtc2i8hYPJlYAAnvXS5fAbAaJQTlE09TPPAXpEoVTGoaom0J6WnXkpl2FcgOAEILYyMhw8MFxoKAahBijcX3fRqyKZqbG2hqSZGttdWx/ZRPPU/l7EbC0llyxuCZDIFOQVR1VoFRiMggtaZsc2AkSgsoFRCpNJm7PoO/4DqUtQiRiEDCe5PLSwAsYCOM8JAionz4Mcq7vkhKZRDdN+EvuJNU81IATg2G7Nl9jL1HezhxepCB0YiRQkCpHKB1iJKQTima8imqy+/FGBBSI6yERAwS3kNcdgIQGY1QErP/Owzt+yLpjmXkFn4Cf+pKLLB192me3bCT3QcHGB0NiYRAR4C0tLVmWTyrnXlzpjBreivtrVkasimU0ymqYxoVHYcKjcOFhpHY2sMBaLQWuDqGRiHK0MGjJtW7kNqzMh+jIqLJBBCFEB7IsFiMkE4lWBb2H8GJi6s8mI8mgAAAABJRU5ErkJggg==" alt="Orange Star logo" />
+          <span>Orange Star</span>
+        </div>
+        <p class="footer-tagline">Travel The World — Through Better Software</p>
+        <div class="footer-social">
+          <a href="#" class="social-icon" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#" id="open-terms">Terms &amp; Conditions</a></li>
+          <li><a href="#" id="open-privacy">Privacy Policy</a></li>
+          <li><a href="#" id="open-faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2025 Orange Star. All rights reserved. Built for Tourism.</p>
+    </div>
+  </footer>
+
+  <!-- ===== MODAL: TERMS ===== -->
+  <div class="modal-overlay" id="modal-terms" role="dialog" aria-modal="true" aria-labelledby="terms-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2 id="terms-title">Terms &amp; Conditions</h2>
+        <button class="modal-close" aria-label="Close Terms modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <h3>1. Use of Services</h3>
+        <p>By engaging Orange Star's services you agree to use our deliverables solely for lawful purposes and in accordance with applicable laws and regulations. Unauthorized resale, redistribution, or reproduction of any software, designs, or assets we create is strictly prohibited without our prior written consent.</p>
+        <h3>2. Intellectual Property</h3>
+        <p>Upon receipt of full payment, the client owns all custom code and assets created exclusively for their project. Orange Star retains rights to general frameworks, reusable components, and methodologies developed independently. We reserve the right to list completed work in our portfolio unless a confidentiality agreement is in place.</p>
+        <h3>3. Payment Terms</h3>
+        <p>Projects require a minimum 50% deposit before development begins. Remaining balance is due upon final delivery and acceptance. Invoices are payable within 14 days of issue. Late payments may incur a 1.5% monthly interest charge.</p>
+        <h3>4. Project Scope Changes</h3>
+        <p>Any additions or modifications to the agreed project scope will be documented in a change order and may affect timeline and cost. Orange Star will not begin out-of-scope work without written approval from the client.</p>
+        <h3>5. Limitation of Liability</h3>
+        <p>Orange Star's total liability for any claims arising from our services shall not exceed the total fees paid for the relevant project. We are not liable for indirect, consequential, or incidental damages of any kind.</p>
+        <h3>6. Confidentiality</h3>
+        <p>Both parties agree to keep confidential any proprietary business information, trade secrets, and project details disclosed during the engagement. This obligation survives the termination of any contract.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MODAL: PRIVACY ===== -->
+  <div class="modal-overlay" id="modal-privacy" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2 id="privacy-title">Privacy Policy</h2>
+        <button class="modal-close" aria-label="Close Privacy modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <h3>Data We Collect</h3>
+        <p>We collect information you provide directly (name, email, project details via our contact form) and basic analytics data (pages visited, browser type) to improve our website experience. We do not collect sensitive personal data unless required for a specific project engagement.</p>
+        <h3>How We Use Your Data</h3>
+        <p>Information you submit is used solely to respond to enquiries, deliver services, and send relevant project communications. We do not sell, rent, or share your personal data with third parties for marketing purposes.</p>
+        <h3>Data Storage</h3>
+        <p>Data is stored securely on servers within the EU or in jurisdictions with equivalent protection standards. We retain contact enquiry data for a maximum of 24 months unless a longer retention is required by law or active contract.</p>
+        <h3>Cookies</h3>
+        <p>Our website uses strictly necessary cookies for site functionality and optional analytics cookies (e.g., aggregated usage statistics). No third-party advertising cookies are used. You may disable non-essential cookies via your browser settings.</p>
+        <h3>Third-Party Services</h3>
+        <p>We use Google Fonts (CDN) for typography. Google may collect anonymized request data per their own privacy policy. No other third-party tracking or advertising scripts are embedded.</p>
+        <h3>Your Rights (GDPR)</h3>
+        <p>Under GDPR you have the right to access, rectify, erase, restrict, or port your personal data, and to object to processing. To exercise any of these rights, email us at <strong>hello@orangestar.dev</strong>. We will respond within 30 days.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MODAL: FAQ ===== -->
+  <div class="modal-overlay" id="modal-faq" role="dialog" aria-modal="true" aria-labelledby="faq-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2 id="faq-title">Frequently Asked Questions</h2>
+        <button class="modal-close" aria-label="Close FAQ modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What industries do you specialize in?
+            <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">We specialize exclusively in the tourism and hospitality sector — boat trip operators, diving centers, hotels, Nile cruises, and tour agencies. Our deep domain expertise means we understand the unique challenges of tourism businesses and build solutions tailored to your exact needs.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How long does a typical project take?
+            <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">Project timelines vary based on scope. A standard booking system typically takes 6–10 weeks. Full-platform builds with payment integration, admin dashboards, and multi-language support range from 3–6 months. We provide detailed timelines during scoping calls.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you provide ongoing maintenance and support?
+            <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">Yes. We offer flexible maintenance and support packages after launch, covering bug fixes, feature additions, security updates, server monitoring, and performance optimization. Clients can choose monthly retainer plans or pay-as-you-go support.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can you integrate with existing booking platforms like Viator or Expedia?
+            <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">Absolutely. API integration is one of our core strengths. We have experience connecting platforms to Viator, GetYourGuide, Expedia, Paymob, Stripe, and various OTAs. We can synchronize availability, pricing, and booking data across channels in real time.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Where are you based and do you work internationally?
+            <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">We are based in Hurghada, Red Sea, Egypt, with deep roots in the local tourism industry. We work with clients internationally — from the Red Sea coast to Europe, Southeast Asia, and beyond. All communication and project management is conducted remotely and efficiently via modern collaboration tools.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
